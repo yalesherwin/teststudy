@@ -1,0 +1,750 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>外贸 Incoterms 计算通关训练营</title>
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+SC:wght@300;400;500;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <!-- 导航栏 -->
+    <nav class="navbar">
+        <div class="nav-container">
+            <div class="logo">
+                <span class="logo-icon">🌐</span>
+                <span class="logo-text">Incoterms 训练营</span>
+            </div>
+            <ul class="nav-links">
+                <li><a href="#home" class="active">首页</a></li>
+                <li><a href="#knowledge">知识讲解</a></li>
+                <li><a href="#calculator">价格计算器</a></li>
+                <li><a href="#exercises">练习题库</a></li>
+                <li><a href="#exam">模拟考试</a></li>
+            </ul>
+            <button class="mobile-menu-btn">☰</button>
+        </div>
+    </nav>
+
+    <!-- 首页横幅 -->
+    <section id="home" class="hero">
+        <div class="hero-content">
+            <h1>外贸 Incoterms 2020</h1>
+            <h2>计算通关训练营</h2>
+            <p class="hero-subtitle">从"懂概念"到"能算价、能成交"</p>
+            <div class="hero-quote">
+                <p>"EXW 是「你自己来拉货」</p>
+                <p>FOB 是「我送你上船」</p>
+                <p>CIF 是「我送你到海上，但风险不陪你走完」"</p>
+            </div>
+            <div class="hero-buttons">
+                <a href="#knowledge" class="btn btn-primary">开始学习</a>
+                <a href="#calculator" class="btn btn-secondary">价格计算器</a>
+            </div>
+        </div>
+        <div class="hero-stats">
+            <div class="stat-item">
+                <span class="stat-number">11</span>
+                <span class="stat-label">种贸易术语</span>
+            </div>
+            <div class="stat-item">
+                <span class="stat-number">50+</span>
+                <span class="stat-label">道练习题</span>
+            </div>
+            <div class="stat-item">
+                <span class="stat-number">∞</span>
+                <span class="stat-label">实战价值</span>
+            </div>
+        </div>
+    </section>
+
+    <!-- 知识讲解部分 -->
+    <section id="knowledge" class="knowledge-section">
+        <div class="container">
+            <h2 class="section-title">📚 核心知识讲解</h2>
+            <p class="section-subtitle">掌握 EXW、FOB、CIF 三大核心术语</p>
+
+            <!-- 术语对比表 -->
+            <div class="comparison-table-wrapper">
+                <h3>🔍 三大术语对比总览</h3>
+                <table class="comparison-table">
+                    <thead>
+                        <tr>
+                            <th>对比项</th>
+                            <th class="exw-col">EXW 工厂交货</th>
+                            <th class="fob-col">FOB 装运港交货</th>
+                            <th class="cif-col">CIF 成本加保险费加运费</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td><strong>英文全称</strong></td>
+                            <td>Ex Works</td>
+                            <td>Free On Board</td>
+                            <td>Cost, Insurance & Freight</td>
+                        </tr>
+                        <tr>
+                            <td><strong>一句话理解</strong></td>
+                            <td>你自己来拉货</td>
+                            <td>我送你上船</td>
+                            <td>我送你到海上</td>
+                        </tr>
+                        <tr>
+                            <td><strong>卖方责任</strong></td>
+                            <td>最小（仅提供货物）</td>
+                            <td>负责到装运港船上</td>
+                            <td>负责运费+保险+装船</td>
+                        </tr>
+                        <tr>
+                            <td><strong>风险转移点</strong></td>
+                            <td>工厂/仓库</td>
+                            <td>装运港船舷</td>
+                            <td>装运港船舷（同FOB）</td>
+                        </tr>
+                        <tr>
+                            <td><strong>出口报关</strong></td>
+                            <td>❌ 买方负责</td>
+                            <td>✅ 卖方负责</td>
+                            <td>✅ 卖方负责</td>
+                        </tr>
+                        <tr>
+                            <td><strong>海运费</strong></td>
+                            <td>❌ 买方负责</td>
+                            <td>❌ 买方负责</td>
+                            <td>✅ 卖方负责</td>
+                        </tr>
+                        <tr>
+                            <td><strong>保险费</strong></td>
+                            <td>❌ 买方负责</td>
+                            <td>❌ 买方负责</td>
+                            <td>✅ 卖方负责</td>
+                        </tr>
+                        <tr>
+                            <td><strong>适用运输</strong></td>
+                            <td>任何运输方式</td>
+                            <td>仅限海运/内河运输</td>
+                            <td>仅限海运/内河运输</td>
+                        </tr>
+                        <tr>
+                            <td><strong>适合场景</strong></td>
+                            <td>买方有强大物流能力</td>
+                            <td>买方想控制运费</td>
+                            <td>新手卖家/一站式服务</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+
+            <!-- 术语卡片 -->
+            <div class="terms-grid">
+                <!-- EXW -->
+                <div class="term-card exw">
+                    <div class="term-header">
+                        <span class="term-badge">EXW</span>
+                        <h3>Ex Works 工厂交货</h3>
+                    </div>
+                    <div class="term-body">
+                        <div class="term-meaning">
+                            <h4>🎯 核心含义</h4>
+                            <p><strong>"你自己来拉货"</strong> - 卖方责任最小的术语</p>
+                        </div>
+                        <div class="term-details">
+                            <h4>📋 卖方责任</h4>
+                            <ul>
+                                <li>✅ 在工厂/仓库备好货物</li>
+                                <li>❌ 不负责装车</li>
+                                <li>❌ 不负责出口报关</li>
+                                <li>❌ 不负责任何运输</li>
+                            </ul>
+                        </div>
+                        <div class="term-details">
+                            <h4>📋 买方责任</h4>
+                            <ul>
+                                <li>✅ 自己安排装货</li>
+                                <li>✅ 自己办理出口报关</li>
+                                <li>✅ 承担所有运输费用</li>
+                                <li>✅ 承担从工厂起的全部风险</li>
+                            </ul>
+                        </div>
+                        <div class="term-warning">
+                            <h4>⚠️ 重要提醒</h4>
+                            <p>外国买方通常无法在中国办理出口报关，实际操作中很少使用纯 EXW</p>
+                        </div>
+                        <div class="term-formula">
+                            <h4>💰 价格构成</h4>
+                            <div class="formula-box">
+                                EXW = 产品成本 + 利润
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- FOB -->
+                <div class="term-card fob">
+                    <div class="term-header">
+                        <span class="term-badge">FOB</span>
+                        <h3>Free On Board 装运港船上交货</h3>
+                    </div>
+                    <div class="term-body">
+                        <div class="term-meaning">
+                            <h4>🎯 核心含义</h4>
+                            <p><strong>"我送你上船"</strong> - 最常用的出口术语</p>
+                        </div>
+                        <div class="term-details">
+                            <h4>📋 卖方责任</h4>
+                            <ul>
+                                <li>✅ 货物运至装运港</li>
+                                <li>✅ 办理出口报关</li>
+                                <li>✅ 将货物装上买方指定船只</li>
+                                <li>❌ 不负责海运费</li>
+                                <li>❌ 不负责保险</li>
+                            </ul>
+                        </div>
+                        <div class="term-details">
+                            <h4>📋 买方责任</h4>
+                            <ul>
+                                <li>✅ 订舱、安排船只</li>
+                                <li>✅ 支付海运费</li>
+                                <li>✅ 办理进口报关</li>
+                                <li>✅ 货物上船后承担风险</li>
+                            </ul>
+                        </div>
+                        <div class="term-highlight">
+                            <h4>🔑 风险转移点</h4>
+                            <p><strong>货物越过装运港船舷时</strong>，风险从卖方转移到买方</p>
+                        </div>
+                        <div class="term-formula">
+                            <h4>💰 价格构成</h4>
+                            <div class="formula-box">
+                                FOB = EXW + 国内物流 + 报关费 + 港杂费
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- CIF -->
+                <div class="term-card cif">
+                    <div class="term-header">
+                        <span class="term-badge">CIF</span>
+                        <h3>Cost, Insurance & Freight 成本加保险费加运费</h3>
+                    </div>
+                    <div class="term-body">
+                        <div class="term-meaning">
+                            <h4>🎯 核心含义</h4>
+                            <p><strong>"我送你到海上，但风险不陪你走完"</strong></p>
+                        </div>
+                        <div class="term-details">
+                            <h4>📋 卖方责任</h4>
+                            <ul>
+                                <li>✅ 包含 FOB 的全部责任</li>
+                                <li>✅ 支付海运费到目的港</li>
+                                <li>✅ 购买海运保险</li>
+                                <li>⚠️ 风险仍在装船时转移</li>
+                            </ul>
+                        </div>
+                        <div class="term-details">
+                            <h4>📋 买方责任</h4>
+                            <ul>
+                                <li>✅ 货物上船后承担风险</li>
+                                <li>✅ 办理进口报关</li>
+                                <li>✅ 目的港之后的费用</li>
+                            </ul>
+                        </div>
+                        <div class="term-highlight warning">
+                            <h4>⚡ 核心陷阱</h4>
+                            <p>CIF 中卖方负责买保险，但<strong>风险转移点与 FOB 相同</strong>！海上出险，买方找保险公司，不能找卖方！</p>
+                        </div>
+                        <div class="term-formula">
+                            <h4>💰 价格构成</h4>
+                            <div class="formula-box">
+                                CIF = FOB + 海运费 + 保险费
+                            </div>
+                            <p class="formula-note">保险费 = (CIF × 110%) × 保险费率 或 简化为 FOB × 费率</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- 完整 Incoterms 2020 -->
+            <div class="all-terms-section">
+                <h3>📖 Incoterms 2020 完整 11 种术语</h3>
+                <div class="terms-category">
+                    <h4>🚢 适用任何运输方式（7种）</h4>
+                    <div class="terms-list">
+                        <div class="mini-term">
+                            <span class="mini-badge exw-bg">EXW</span>
+                            <div>
+                                <strong>Ex Works</strong>
+                                <p>工厂交货 - 卖方责任最小</p>
+                            </div>
+                        </div>
+                        <div class="mini-term">
+                            <span class="mini-badge fca-bg">FCA</span>
+                            <div>
+                                <strong>Free Carrier</strong>
+                                <p>货交承运人 - 适合集装箱</p>
+                            </div>
+                        </div>
+                        <div class="mini-term">
+                            <span class="mini-badge cpt-bg">CPT</span>
+                            <div>
+                                <strong>Carriage Paid To</strong>
+                                <p>运费付至 - 类似CFR但适用多式联运</p>
+                            </div>
+                        </div>
+                        <div class="mini-term">
+                            <span class="mini-badge cip-bg">CIP</span>
+                            <div>
+                                <strong>Carriage & Insurance Paid To</strong>
+                                <p>运费保险费付至 - 类似CIF但适用多式联运</p>
+                            </div>
+                        </div>
+                        <div class="mini-term">
+                            <span class="mini-badge dap-bg">DAP</span>
+                            <div>
+                                <strong>Delivered At Place</strong>
+                                <p>目的地交货 - 卖方送到指定地点</p>
+                            </div>
+                        </div>
+                        <div class="mini-term">
+                            <span class="mini-badge dpu-bg">DPU</span>
+                            <div>
+                                <strong>Delivered at Place Unloaded</strong>
+                                <p>目的地卸货后交货 - 卖方负责卸货</p>
+                            </div>
+                        </div>
+                        <div class="mini-term">
+                            <span class="mini-badge ddp-bg">DDP</span>
+                            <div>
+                                <strong>Delivered Duty Paid</strong>
+                                <p>完税后交货 - 卖方责任最大</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="terms-category">
+                    <h4>🚢 仅适用海运和内河运输（4种）</h4>
+                    <div class="terms-list">
+                        <div class="mini-term">
+                            <span class="mini-badge fas-bg">FAS</span>
+                            <div>
+                                <strong>Free Alongside Ship</strong>
+                                <p>船边交货 - 货物放到船边</p>
+                            </div>
+                        </div>
+                        <div class="mini-term">
+                            <span class="mini-badge fob-bg">FOB</span>
+                            <div>
+                                <strong>Free On Board</strong>
+                                <p>装运港船上交货 - 最常用出口术语</p>
+                            </div>
+                        </div>
+                        <div class="mini-term">
+                            <span class="mini-badge cfr-bg">CFR</span>
+                            <div>
+                                <strong>Cost and Freight</strong>
+                                <p>成本加运费 - FOB+海运费</p>
+                            </div>
+                        </div>
+                        <div class="mini-term">
+                            <span class="mini-badge cif-bg">CIF</span>
+                            <div>
+                                <strong>Cost, Insurance & Freight</strong>
+                                <p>成本加保险费加运费 - 最常用进口术语</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- 责任流程图 -->
+            <div class="responsibility-flow">
+                <h3>📊 责任与风险转移图解</h3>
+                <div class="flow-diagram">
+                    <div class="flow-row">
+                        <div class="flow-stage">
+                            <span class="stage-icon">🏭</span>
+                            <span class="stage-name">工厂</span>
+                        </div>
+                        <div class="flow-arrow">→</div>
+                        <div class="flow-stage">
+                            <span class="stage-icon">🚛</span>
+                            <span class="stage-name">国内运输</span>
+                        </div>
+                        <div class="flow-arrow">→</div>
+                        <div class="flow-stage">
+                            <span class="stage-icon">📋</span>
+                            <span class="stage-name">出口报关</span>
+                        </div>
+                        <div class="flow-arrow">→</div>
+                        <div class="flow-stage">
+                            <span class="stage-icon">🏗️</span>
+                            <span class="stage-name">港口装船</span>
+                        </div>
+                        <div class="flow-arrow">→</div>
+                        <div class="flow-stage">
+                            <span class="stage-icon">🚢</span>
+                            <span class="stage-name">海上运输</span>
+                        </div>
+                        <div class="flow-arrow">→</div>
+                        <div class="flow-stage">
+                            <span class="stage-icon">🏢</span>
+                            <span class="stage-name">目的港</span>
+                        </div>
+                    </div>
+                    <div class="flow-responsibilities">
+                        <div class="resp-row exw-resp">
+                            <span class="resp-label">EXW</span>
+                            <div class="resp-bar seller" style="width: 8%;">卖</div>
+                            <div class="resp-bar buyer" style="width: 92%;">买方责任</div>
+                        </div>
+                        <div class="resp-row fob-resp">
+                            <span class="resp-label">FOB</span>
+                            <div class="resp-bar seller" style="width: 50%;">卖方责任</div>
+                            <div class="resp-bar buyer" style="width: 50%;">买方责任</div>
+                        </div>
+                        <div class="resp-row cif-resp">
+                            <span class="resp-label">CIF</span>
+                            <div class="resp-bar seller" style="width: 75%;">卖方责任（费用）</div>
+                            <div class="resp-bar buyer" style="width: 25%;">买</div>
+                        </div>
+                        <div class="risk-note">
+                            <span class="risk-icon">⚠️</span>
+                            <span>注意：CIF 虽然卖方支付运费保险费，但风险转移点与 FOB 相同（装船时）</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- 价格计算器 -->
+    <section id="calculator" class="calculator-section">
+        <div class="container">
+            <h2 class="section-title">🧮 价格计算器</h2>
+            <p class="section-subtitle">实时计算 EXW / FOB / CFR / CIF 价格转换</p>
+
+            <div class="calculator-wrapper">
+                <!-- 计算模式选择 -->
+                <div class="calc-mode-selector">
+                    <button class="calc-mode active" data-mode="exw-to-all">EXW → FOB/CIF</button>
+                    <button class="calc-mode" data-mode="fob-to-cif">FOB → CIF</button>
+                    <button class="calc-mode" data-mode="cif-to-fob">CIF → FOB</button>
+                    <button class="calc-mode" data-mode="advanced">高级计算</button>
+                </div>
+
+                <!-- EXW to ALL 计算器 -->
+                <div class="calc-panel active" id="exw-to-all-panel">
+                    <h3>从 EXW 计算其他价格</h3>
+                    <div class="calc-grid">
+                        <div class="input-group">
+                            <label>EXW 价格 (USD/吨)</label>
+                            <input type="number" id="exw-price" placeholder="如：500" value="500">
+                        </div>
+                        <div class="input-group">
+                            <label>国内拖车费 (USD/吨)</label>
+                            <input type="number" id="inland-freight" placeholder="如：20" value="20">
+                        </div>
+                        <div class="input-group">
+                            <label>报关费 + 港杂费 (USD/吨)</label>
+                            <input type="number" id="customs-port" placeholder="如：15" value="15">
+                        </div>
+                        <div class="input-group">
+                            <label>海运费 (USD/吨)</label>
+                            <input type="number" id="ocean-freight" placeholder="如：80" value="80">
+                        </div>
+                        <div class="input-group">
+                            <label>保险费率 (%)</label>
+                            <input type="number" id="insurance-rate" placeholder="如：0.3" value="0.3" step="0.01">
+                        </div>
+                    </div>
+                    <button class="btn btn-calculate" onclick="calculateFromEXW()">计算价格</button>
+
+                    <div class="calc-results" id="exw-results">
+                        <div class="result-card">
+                            <span class="result-label">FOB 价格</span>
+                            <span class="result-value" id="result-fob">--</span>
+                            <span class="result-formula">= EXW + 国内物流 + 报关港杂</span>
+                        </div>
+                        <div class="result-card">
+                            <span class="result-label">CFR 价格</span>
+                            <span class="result-value" id="result-cfr">--</span>
+                            <span class="result-formula">= FOB + 海运费</span>
+                        </div>
+                        <div class="result-card">
+                            <span class="result-label">CIF 价格</span>
+                            <span class="result-value" id="result-cif">--</span>
+                            <span class="result-formula">= FOB + 海运费 + 保险费</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- FOB to CIF 计算器 -->
+                <div class="calc-panel" id="fob-to-cif-panel">
+                    <h3>从 FOB 计算 CIF</h3>
+                    <div class="calc-grid">
+                        <div class="input-group">
+                            <label>FOB 价格 (USD/吨)</label>
+                            <input type="number" id="fob-price-2" placeholder="如：600" value="600">
+                        </div>
+                        <div class="input-group">
+                            <label>海运费 (USD/吨)</label>
+                            <input type="number" id="ocean-freight-2" placeholder="如：80" value="80">
+                        </div>
+                        <div class="input-group">
+                            <label>保险费率 (%)</label>
+                            <input type="number" id="insurance-rate-2" placeholder="如：0.3" value="0.3" step="0.01">
+                        </div>
+                    </div>
+                    <button class="btn btn-calculate" onclick="calculateFOBtoCIF()">计算 CIF</button>
+
+                    <div class="calc-results" id="fob-cif-results">
+                        <div class="result-card highlight">
+                            <span class="result-label">CIF 价格</span>
+                            <span class="result-value" id="result-cif-2">--</span>
+                            <span class="result-formula">= FOB + 海运费 + 保险费</span>
+                        </div>
+                        <div class="result-breakdown">
+                            <p>保险费：<span id="insurance-amount-2">--</span> USD/吨</p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- CIF to FOB 计算器 -->
+                <div class="calc-panel" id="cif-to-fob-panel">
+                    <h3>从 CIF 反推 FOB（客户常见需求）</h3>
+                    <div class="scenario-box">
+                        <p>💬 客户说："Your CIF price is too high. Give me FOB price."</p>
+                    </div>
+                    <div class="calc-grid">
+                        <div class="input-group">
+                            <label>CIF 价格 (USD/吨)</label>
+                            <input type="number" id="cif-price-3" placeholder="如：720" value="720">
+                        </div>
+                        <div class="input-group">
+                            <label>海运费 (USD/吨)</label>
+                            <input type="number" id="ocean-freight-3" placeholder="如：90" value="90">
+                        </div>
+                        <div class="input-group">
+                            <label>保险费 (USD/吨)</label>
+                            <input type="number" id="insurance-3" placeholder="如：2" value="2">
+                        </div>
+                    </div>
+                    <button class="btn btn-calculate" onclick="calculateCIFtoFOB()">计算 FOB</button>
+
+                    <div class="calc-results" id="cif-fob-results">
+                        <div class="result-card highlight">
+                            <span class="result-label">FOB 价格</span>
+                            <span class="result-value" id="result-fob-3">--</span>
+                            <span class="result-formula">= CIF - 海运费 - 保险费</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- 高级计算器 -->
+                <div class="calc-panel" id="advanced-panel">
+                    <h3>高级报价计算器</h3>
+                    <div class="calc-grid advanced-grid">
+                        <div class="input-group">
+                            <label>产品成本 (USD/吨)</label>
+                            <input type="number" id="product-cost" placeholder="如：400" value="400">
+                        </div>
+                        <div class="input-group">
+                            <label>利润率 (%)</label>
+                            <input type="number" id="profit-margin" placeholder="如：20" value="20">
+                        </div>
+                        <div class="input-group">
+                            <label>工厂到港口运费 (USD/吨)</label>
+                            <input type="number" id="factory-port" placeholder="如：25" value="25">
+                        </div>
+                        <div class="input-group">
+                            <label>报关费 (USD/吨)</label>
+                            <input type="number" id="customs-fee" placeholder="如：8" value="8">
+                        </div>
+                        <div class="input-group">
+                            <label>港杂费 (USD/吨)</label>
+                            <input type="number" id="port-charges" placeholder="如：12" value="12">
+                        </div>
+                        <div class="input-group">
+                            <label>海运费 (USD/吨)</label>
+                            <input type="number" id="ocean-freight-4" placeholder="如：85" value="85">
+                        </div>
+                        <div class="input-group">
+                            <label>保险费率 (%)</label>
+                            <input type="number" id="insurance-rate-4" placeholder="如：0.25" value="0.25" step="0.01">
+                        </div>
+                        <div class="input-group">
+                            <label>数量 (吨)</label>
+                            <input type="number" id="quantity" placeholder="如：100" value="100">
+                        </div>
+                    </div>
+                    <button class="btn btn-calculate" onclick="calculateAdvanced()">完整计算</button>
+
+                    <div class="calc-results advanced-results" id="advanced-results">
+                        <div class="results-row">
+                            <div class="result-card">
+                                <span class="result-label">EXW 单价</span>
+                                <span class="result-value" id="adv-exw">--</span>
+                            </div>
+                            <div class="result-card">
+                                <span class="result-label">FOB 单价</span>
+                                <span class="result-value" id="adv-fob">--</span>
+                            </div>
+                            <div class="result-card">
+                                <span class="result-label">CFR 单价</span>
+                                <span class="result-value" id="adv-cfr">--</span>
+                            </div>
+                            <div class="result-card">
+                                <span class="result-label">CIF 单价</span>
+                                <span class="result-value" id="adv-cif">--</span>
+                            </div>
+                        </div>
+                        <div class="total-amount">
+                            <h4>订单总金额</h4>
+                            <div class="totals-grid">
+                                <div class="total-item">
+                                    <span>EXW 总价</span>
+                                    <span id="total-exw">--</span>
+                                </div>
+                                <div class="total-item">
+                                    <span>FOB 总价</span>
+                                    <span id="total-fob">--</span>
+                                </div>
+                                <div class="total-item">
+                                    <span>CFR 总价</span>
+                                    <span id="total-cfr">--</span>
+                                </div>
+                                <div class="total-item">
+                                    <span>CIF 总价</span>
+                                    <span id="total-cif">--</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- 练习题库 -->
+    <section id="exercises" class="exercises-section">
+        <div class="container">
+            <h2 class="section-title">📝 练习题库</h2>
+            <p class="section-subtitle">由浅入深，从概念到实操</p>
+
+            <!-- 题目分类选择 -->
+            <div class="exercise-categories">
+                <button class="category-btn active" data-category="basic">基础认知</button>
+                <button class="category-btn" data-category="calculation">入门计算</button>
+                <button class="category-btn" data-category="advanced">进阶实战</button>
+                <button class="category-btn" data-category="comprehensive">综合应用</button>
+                <button class="category-btn" data-category="scenario">场景模拟</button>
+            </div>
+
+            <!-- 题目容器 -->
+            <div class="exercises-container" id="exercises-container">
+                <!-- 题目将通过JS动态加载 -->
+            </div>
+
+            <!-- 进度显示 -->
+            <div class="exercise-progress">
+                <div class="progress-bar">
+                    <div class="progress-fill" id="progress-fill"></div>
+                </div>
+                <div class="progress-text">
+                    <span>已完成: <span id="completed-count">0</span> / <span id="total-count">0</span></span>
+                    <span>正确率: <span id="accuracy-rate">0%</span></span>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- 模拟考试 -->
+    <section id="exam" class="exam-section">
+        <div class="container">
+            <h2 class="section-title">🎯 模拟考试</h2>
+            <p class="section-subtitle">检验学习成果，获取能力证书</p>
+
+            <div class="exam-intro" id="exam-intro">
+                <div class="exam-info-cards">
+                    <div class="exam-info-card">
+                        <span class="info-icon">📋</span>
+                        <h4>考试内容</h4>
+                        <p>20道综合题目，涵盖概念、计算、场景</p>
+                    </div>
+                    <div class="exam-info-card">
+                        <span class="info-icon">⏱️</span>
+                        <h4>考试时间</h4>
+                        <p>30分钟限时答题</p>
+                    </div>
+                    <div class="exam-info-card">
+                        <span class="info-icon">🏆</span>
+                        <h4>通过标准</h4>
+                        <p>正确率 80% 以上获得证书</p>
+                    </div>
+                </div>
+                <button class="btn btn-primary btn-large" onclick="startExam()">开始考试</button>
+            </div>
+
+            <div class="exam-container" id="exam-container" style="display: none;">
+                <div class="exam-header">
+                    <div class="exam-timer">
+                        <span class="timer-icon">⏱️</span>
+                        <span id="exam-timer">30:00</span>
+                    </div>
+                    <div class="exam-question-nav">
+                        <span>题目 <span id="current-q">1</span> / 20</span>
+                    </div>
+                </div>
+                <div class="exam-question-area" id="exam-question-area">
+                    <!-- 考试题目将动态加载 -->
+                </div>
+                <div class="exam-nav-buttons">
+                    <button class="btn btn-secondary" id="prev-q-btn" onclick="prevQuestion()">上一题</button>
+                    <button class="btn btn-primary" id="next-q-btn" onclick="nextQuestion()">下一题</button>
+                    <button class="btn btn-success" id="submit-exam-btn" onclick="submitExam()" style="display: none;">提交试卷</button>
+                </div>
+            </div>
+
+            <div class="exam-result" id="exam-result" style="display: none;">
+                <!-- 考试结果将动态显示 -->
+            </div>
+        </div>
+    </section>
+
+    <!-- 页脚 -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <h4>🌐 Incoterms 训练营</h4>
+                    <p>专业的外贸术语学习平台</p>
+                    <p>让每一位外贸人都能精准报价</p>
+                </div>
+                <div class="footer-section">
+                    <h4>快速链接</h4>
+                    <ul>
+                        <li><a href="#knowledge">知识讲解</a></li>
+                        <li><a href="#calculator">价格计算器</a></li>
+                        <li><a href="#exercises">练习题库</a></li>
+                        <li><a href="#exam">模拟考试</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h4>学习资源</h4>
+                    <ul>
+                        <li><a href="#">Incoterms 2020 官方文档</a></li>
+                        <li><a href="#">外贸报价实战指南</a></li>
+                        <li><a href="#">常见问题解答</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2024 外贸 Incoterms 计算通关训练营 | 助力外贸人成长</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
